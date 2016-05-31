@@ -33,11 +33,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 
-app.use(session({
-  secret: 'oh wow very secret much security',
-  resave: true,
-  saveUninitialized: false
-}));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
