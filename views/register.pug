@@ -1,0 +1,13 @@
+extends layout
+
+block content
+	section.register(layout='column center-center')
+		div(self='size-1of5')
+			form.input-group.input-group-lg(name="register_user" method="post" id="register_user_form")
+				span.input-group-addon
+				input.form-control(type="text" name="user_name" placeholder="username" required)
+				br
+				input.form-control(type="text" name="user_pass" placeholder="password" required)
+				br
+				input.form-control(type="submit" value="submit")
+				span.input-group-addon

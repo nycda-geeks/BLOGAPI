@@ -1,0 +1,10 @@
+extends layout
+
+block content
+	
+	section.all(layout='column')
+		div
+			each post in posts
+				ul
+					li title: #{post.post_title}
+					li post:  #{post.post_cont}

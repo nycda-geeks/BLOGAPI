@@ -1,0 +1,41 @@
+doctype html
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/stylesheets/flex-layout-attribute.min.css')
+		link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+		script(src='/javascripts/jquery.min.js')
+		script(src='/javascripts/tab.js')
+		script(src='/javascripts/bootstrap.min.js')
+
+
+
+	body
+		section
+			ul.nav.nav-tabs
+				li(role='presentation')
+					a(href="/" self='size-x1 center' aria-controls='home' role='tab') HOME
+				li(role='presentation')
+					a(href="/register" self='size-x1 center' aria-controls='register' role='tab') REGISTER
+				li(role='presentation')
+					a(href="/login" self='size-x1 center' aria-controls='login' role='tab') LOGIN
+				li(role='presentation')
+					a(href="/profile" self='size-x1 center' aria-controls='profile' role='tab' ) PROFILE
+				li(role='presentation')
+					a(href="/all" self='size-x1 center' aria-controls='allposts' role='tab' ) ALL POSTS
+				li(role='presentation')
+					a(href="/all/find" self='size-x1 center' aria-controls='findposts' role='tab' ) FIND POSTS
+				li(role='presentation')
+					a(href="/create" self='size-x1 center' aria-controls='creatpost' role='tab' ) CREATE POST
+
+		.tab-content
+			#home.tab-pane(role='tabpanel')
+			#register.tab-pane(role='tabpanel')
+			#login.tab-pane(role='tabpanel')
+			#profile.tab-pane(role='tabpanel')
+			#allposts.tab-pane(role='tabpanel')
+			#findposts.tab-pane(role='tabpanel')
+			#createpost.tab-pane(role='tabpanel')
+
+	block content

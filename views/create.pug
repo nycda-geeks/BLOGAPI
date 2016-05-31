@@ -1,0 +1,12 @@
+extends layout
+
+
+block content
+	section.create(layout='column center-center')
+		div
+			form(name="create_post" method="post" id="create_post_form")
+				input(type="text" name="post_title" placeholder="Title" form="create_post_form")
+				br
+				textarea(rows="20" cols="50" name="post_cont" placeholder="Write blogpost here" form="create_post_form")
+				br
+				input(type="submit" value="post" form="create_post_form")

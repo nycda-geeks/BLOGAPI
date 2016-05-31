@@ -1,0 +1,11 @@
+extends layout
+
+block content
+	section.login(layout='column center-center')
+		div
+			form(name="login_user" method="post" id="login_user_form")
+				input(type="text" name="user_name" placeholder="username")
+				br
+				input(type="text" name="user_pass" placeholder="password")
+				br
+				input(type="submit" value="submit")

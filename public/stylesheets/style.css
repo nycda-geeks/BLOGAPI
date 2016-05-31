@@ -1,0 +1,35 @@
+body {
+  
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  padding: 1%;
+  color: white;
+  text-decoration: none;
+}
+
+section {
+	padding: 20px;
+}
+
+section.layout {
+	min-height: 10vh;
+	background-color: white;
+	position:
+}
+
+section.index {
+	background-color: violet;
+}
+
+section.register {
+	
+}
+
+section.login {
+	background-color: red;
+}
+input {
+	margin: 10px;
+}
